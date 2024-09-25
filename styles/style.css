@@ -1,7 +1,8 @@
 .page {
   font-family: var(--font-family, 'IBM Plex mono', 'Arial', monospace);
   font-size: 18px;
-  line-height: 23.4px;  
+  line-height: 23.4px;
+  color: var(--text-color, #f1b2ce);  
   background-image: var(--bg-image, url(../images/cover-image.png));
   background-position: center;
   background-size: cover;
@@ -186,4 +187,132 @@
   .header__description {
     max-width: 490px;
   }
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+@media (width >= 768px) {
+  .content {
+    gap: 80px;
+    padding: 60px 20px;
+  }
+}
+
+.content-container {
+  display: grid;
+  gap: 20px;
+}
+
+.content-container--gallery {
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+  .content-container {
+    grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
+  }
+
+  .content-container--gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .content-container {
+    column-gap: 30px;
+  }
+}
+
+
+
+.title {
+  color: var(--secondary-color, #ff0070);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.title-decorated {
+  color: var(--highlight-color, #000028);
+  background: var(--accent-color, #ff0070);
+}
+
+.title--how {
+  margin-block-end: 20px;
+}
+
+.articles-list {
+  display: grid;
+  gap: 20px;
+}
+
+@media (width >= 768px) {
+  .articles-list--what {
+    grid-column-start: span 2;
+  }
+
+  .articles-list--how {
+    grid-column-start: 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .articles-list--what {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.article {
+  display: grid;
+  gap: 9px;
+}
+
+@media (width >= 768px) {
+  .article {
+    gap: 10px;
+  }
+}
+    
+
+.link {
+  text-decoration: none;
+}
+
+.shadow-decor {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+}
+
+.gallery-list {
+  display: grid;
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-list__item:first-child,
+  .gallery-list__item:last-child {
+    grid-column-start: span 2;
+  }
+
+  .gallery-list__item:nth-child(2),
+  .gallery-list__item:nth-child(3) {
+    grid-row-start: span 2;
+  }
+}
+
+.gallery-list__item-img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
 }
