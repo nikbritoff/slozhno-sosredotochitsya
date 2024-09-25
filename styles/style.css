@@ -146,12 +146,16 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82%;
+}
+
+.page-title--header {
   margin-block-start: 65px; 
   margin-block-end: 60px; 
+
 }
 
 @media (width >= 768px) {
-  .page-title {
+  .page-title--header {
     margin-block-start: 176px;
     margin-block-end: 160px;
   }
@@ -162,6 +166,9 @@
     font-size: 157px;
     font-weight: 700;
     line-height: 130px;
+  }
+
+  .page-title--header {
     margin-block-start: 275px;
     margin-block-end: 115px;
   }
@@ -315,4 +322,11 @@
   object-position: center;
   block-size: 100%;
   inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  min-block-size: 100vh;
+  place-items: center;
 }
