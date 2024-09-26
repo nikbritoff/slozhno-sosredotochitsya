@@ -2,7 +2,7 @@
   font-family: var(--font-family, 'IBM Plex mono', 'Arial', monospace);
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--text-color, #f1b2ce);  
+  color: var(--text-color, #f1b2ce);
   background-image: var(--bg-image, url(../images/cover-image.png));
   background-position: center;
   background-size: cover;
@@ -121,11 +121,6 @@
   font-family: inherit;
   background-color: transparent;
   border: none;
-  padding: 10px;
-}
-
-.header__theme-menu-button {
-  border: 1px solid transparent;
   padding: 2px 12px;
   color: var(--secondary-color, #ff0070);
   line-height: 18px;
@@ -161,9 +156,8 @@
 }
 
 .page-title--header {
-  margin-block-start: 65px; 
-  margin-block-end: 60px; 
-
+  margin-block-start: 65px;
+  margin-block-end: 60px;
 }
 
 @media (width >= 768px) {
@@ -288,13 +282,7 @@
 
 .article {
   display: grid;
-  gap: 9px;
-}
-
-@media (width >= 768px) {
-  .article {
-    gap: 10px;
-  }
+  gap: 10px;
 }
     
 

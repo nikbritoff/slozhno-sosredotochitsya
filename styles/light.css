@@ -20,8 +20,8 @@
     --text-color: var(--color-black-200, #353430);
     --highlight-color: var(--color-black-200, #353430);
     --hover-color: color-mix(in srgb, var(--secondary-color),  transparent 60%);
-  
-    --bg-image: url("../images/cover-image-light.png");  
+
+    --bg-image: url("../images/cover-image-light.png");
     --bg-color: var(--color-pink-100, #fff1f7);
   
     --header-decor-visibility-state: hidden;
